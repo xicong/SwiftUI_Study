@@ -22,65 +22,182 @@ struct LearnText: View {
     @State
     var textPadding: CGFloat = 10.0
     
+    @State
+    var textFontSize: CGFloat = 15.0
+    
+    @State
+    var textLineSpacing: CGFloat = 5.0
+    
+    @State
+    var textKerning:CGFloat = 0.0
+    
+    @State
+    var textBaselineOffset:CGFloat = 0.0
+    var textBaselineOffsetArr:[CGFloat]=[0.0,15.0,-15.0]
+    
+    @State
+    var textbBold:Bool = false
+    
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 0){
-            HStack(){
-                Text(textStr)
-                .bold()
-                .italic()
-                .foregroundColor(textColor)
-                .background(textBackGround)
-                    .padding(textPadding)
-            }
-            .border(Color.blue,width: 5)
-            
-            List(){
-                HStack(){
-                    Text("Text(设置文字内容)")
-                    Spacer()
+        Group{
+            VStack(alignment: .leading, spacing: 0){
+                HStack(alignment: .center, spacing: 0){
+                    Text(textStr)
+//                        .bold() //字体加粗
+                        .fontWeight(textbBold ? .bold : .none)  //替代bold()的绝佳方案
+                        .italic() //斜体文字
+                        .baselineOffset(textBaselineOffset)
+                        .kerning(textKerning)
+                        .font(.system(size: textFontSize))
+                        .foregroundColor(textColor)
+                        .background(textBackGround)
+                        .lineSpacing(textLineSpacing)
+                        .padding(textPadding)
                 }
-                .onTapGesture {
-                    if(self.textStr=="Text"){
-                        self.textStr="修改文字成功"
-                    }else{
-                        self.textStr="Text"
+                .border(Color.blue,width: 5)
+                .cornerRadius(10, antialiased: true)
+                .padding(EdgeInsets.init(top: 20, leading: 10, bottom: 20, trailing: 10))
+
+                List(){
+                    HStack(){
+                        Text("Text(设置文字内容)").font(.system(size: 15))
+                        Spacer()
                     }
-                }
-                HStack(){
-                    Text("foregroundColor(设置文字颜色)")
-                    Spacer()
-                }
-                .onTapGesture {
-                    if(self.textColor==Color.black){
-                        self.textColor=Color.yellow
-                    }else{
-                        self.textColor=Color.black
+                    .onTapGesture {
+                        if(self.textStr=="Text"){
+                            self.textStr="修改文字成功"
+                        }else{
+                            self.textStr="Text"
+                        }
                     }
-                }
-                HStack(){
-                    Text("background(设置文字背景颜色)")
-                    Spacer()
-                }
-                .onTapGesture {
-                    if(self.textBackGround==Color.white){
-                        self.textBackGround=Color.yellow
-                    }else{
-                        self.textBackGround=Color.white
+                    HStack(){
+                        Text("foregroundColor(设置文字颜色)").font(.system(size: 15))
+                        Spacer()
                     }
-                }
-                HStack(){
-                    Text("padding(设置文字内容的边距)")
-                    Spacer()
-                }
-                .onTapGesture {
-                    if(self.textPadding==10.0){
-                        self.textPadding=0.0
-                    }else{
-                        self.textPadding=10.0
+                    .onTapGesture {
+                        if(self.textColor==Color.black){
+                            self.textColor=Color.yellow
+                        }else{
+                            self.textColor=Color.black
+                        }
                     }
+                    HStack(){
+                        Text("background(设置文字背景颜色)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textBackGround==Color.white){
+                            self.textBackGround=Color.yellow
+                        }else{
+                            self.textBackGround=Color.white
+                        }
+                    }
+                    HStack(){
+                        Text("padding(设置文字内容的边距)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textPadding==10.0){
+                            self.textPadding=0.0
+                        }else{
+                            self.textPadding=10.0
+                        }
+                    }
+                    HStack(){
+                        Text("font(设置文字的字体和大小，默认使用系统的字体)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textFontSize==15.0){
+                            self.textFontSize=30.0
+                        }else{
+                            self.textFontSize=15.0
+                        }
+                    }
+                    HStack(){
+                        Text("lineSpacing(设置行距)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textLineSpacing==5.0){
+                            self.textLineSpacing=30.0
+                        }else{
+                            self.textLineSpacing=5.0
+                        }
+                    }
+                    HStack(){
+                        Text("kerning(设置文字间距)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textKerning==0.0){
+                            self.textKerning=10.0
+                        }else{
+                            self.textKerning=0.0
+                        }
+                    }
+                    HStack(){
+                        Text("baselineOffset(相对于基线向上向下移动文本)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textBaselineOffset==0.0){
+                            self.textBaselineOffset=self.textBaselineOffsetArr[Int(arc4random()%3)]
+                        }else{
+                            self.textBaselineOffset=0.0
+                        }
+                    }
+                    HStack(){
+                        Text("fontWeight(设置文字粗体)").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        if(self.textbBold){
+                            self.textbBold=false
+                        }else{
+                             self.textbBold=true
+                        }
+                    }
+                    ////            .underline() //设置文字下划线，默认颜色为文字颜色
+                    //            .underline(true, color: Color.green)  //设置文字下划线true显示false隐藏，并设置颜色
+                    ////            .strikethrough() //设置文字删除线 颜色默认为文字的颜色
+                    //            .strikethrough(true, color: Color.red) //设置文字删除线true显示false隐藏，并设置颜色
+                    //            .padding()
+                    //            .background(Color.blue)  //设置文字的背景色
+                    //            .padding()  //设置边距，在当前视图之外去实现新的属性  ==.padding(.all)
+                    //            .background(Color.red)
+                    //            .padding()
+                    //            .background(Color.yellow)
+                    //            .padding()
+                    //            .background(Color.gray)
+                    //            .padding()
+                    //            .background(Color.green)
+                    //            .padding()
+                    //            .background(Color.black)
+                    ////            .allowsTightening(true)  //设置此视图中的文本是否在必要时可以压缩字符之间的空格以使文本适合一行。
+                    ////            .cornerRadius(50) //设置当前view的圆角大小
+                    //            .cornerRadius(50, antialiased: false)
+                    //            .padding()
+                    //            .border(Color.green, width: 10)  //设置该视图的边框颜色 宽度
+                    //            .opacity(1.0)  //设置view的透明度
+                    ////            .multilineTextAlignment(.trailing)  //设置多行文字的时候文字对齐的方式，左，右，居中
+                    ////            .lineLimit(1)  //设置文字行数
+                    ////            .border(Color.red, width: 4, cornerRadius: 16)
+                    ////            .font(.title)
+                    ////            .font(.body)
+                    ////            .fontWeight(.light)  //文字粗细 个人感觉变化一点都不明显
+                    ////            .colorMultiply(.white)  //颜色相乘
+                    ////            .colorInvert()  //颜色反转
                 }
             }
         }
+        .navigationBarTitle("",displayMode: .inline)
+        .navigationBarItems(
+            trailing:Text("恢复默认")
+                .font(.system(size: 12))
+                .bold())
+        .navigationBarHidden(false)
     }
 }
 
@@ -89,3 +206,5 @@ struct SwiftUIView_Previews: PreviewProvider {
         LearnText()
     }
 }
+
+
