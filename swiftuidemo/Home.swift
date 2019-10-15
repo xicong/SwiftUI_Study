@@ -82,7 +82,7 @@ struct Home: View {
                         HomeItems(title:"NavigationView",subTitle:"用于创建包含顶部导航栏的视图容器")
                     }
                     NavigationLink(destination: LearnTabView()) {
-                        HomeItems(title:"TabView",subTitle:"类似于微信主页按钮切换中间试图的效果")
+                        HomeItems(title:"TabView",subTitle:"类似于微信主页按钮切换中间视图的效果")
                     }
                 }
                 
@@ -95,6 +95,16 @@ struct Home: View {
                     }
                     NavigationLink(destination: LearnActionSheet()) {
                         HomeItems(title:"ActionSheet",subTitle:"用于从底部弹出一个选择确认框")
+                    }
+                }
+                
+                Section(header:Text("特殊控件")){
+                    NavigationLink(destination: LearnWebView()) {
+                        HomeItems(title:"WebView",subTitle:"用于显示一个网页的控件")
+                    }
+                    NavigationLink(destination: ControllerPage<UIKitController>()) {
+                        HomeItems(title:"UIViewController",subTitle:"打开 UIViewController")
+
                     }
                 }
             }.navigationBarTitle(Text("SwiftUi学习之路").font(.title)) // Default to large title style

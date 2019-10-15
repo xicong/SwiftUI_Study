@@ -52,6 +52,9 @@
 		57FFF89A23559D5400F66143 /* LearnAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89923559D5400F66143 /* LearnAlert.swift */; };
 		57FFF89C2355A2B700F66143 /* LearnModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89B2355A2B700F66143 /* LearnModal.swift */; };
 		57FFF89E2355A4C100F66143 /* LearnActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */; };
+		57FFF8A02355B31700F66143 /* LearnWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89F2355B31700F66143 /* LearnWebView.swift */; };
+		57FFF8A62355BF1000F66143 /* ControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8A52355BF1000F66143 /* ControllerPage.swift */; };
+		57FFF8A82355BF4D00F66143 /* UIKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8A72355BF4D00F66143 /* UIKitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +126,9 @@
 		57FFF89923559D5400F66143 /* LearnAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAlert.swift; sourceTree = "<group>"; };
 		57FFF89B2355A2B700F66143 /* LearnModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnModal.swift; sourceTree = "<group>"; };
 		57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnActionSheet.swift; sourceTree = "<group>"; };
+		57FFF89F2355B31700F66143 /* LearnWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWebView.swift; sourceTree = "<group>"; };
+		57FFF8A52355BF1000F66143 /* ControllerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerPage.swift; sourceTree = "<group>"; };
+		57FFF8A72355BF4D00F66143 /* UIKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,9 @@
 				57FFF89923559D5400F66143 /* LearnAlert.swift */,
 				57FFF89B2355A2B700F66143 /* LearnModal.swift */,
 				57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */,
+				57FFF89F2355B31700F66143 /* LearnWebView.swift */,
+				57FFF8A52355BF1000F66143 /* ControllerPage.swift */,
+				57FFF8A72355BF4D00F66143 /* UIKitController.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -415,9 +424,11 @@
 				579D65972339C0E500D5BF2B /* AppDelegate.swift in Sources */,
 				57FFF89823559B4400F66143 /* LearnTabView.swift in Sources */,
 				57FFF880235567C800F66143 /* LearnDatePickerDefaultStyle.swift in Sources */,
+				57FFF8A62355BF1000F66143 /* ControllerPage.swift in Sources */,
 				57FFF87C235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift in Sources */,
 				57FFF85D2351825000F66143 /* KeyUtils.swift in Sources */,
 				579D65992339C0E500D5BF2B /* SceneDelegate.swift in Sources */,
+				57FFF8A02355B31700F66143 /* LearnWebView.swift in Sources */,
 				57FFF89E2355A4C100F66143 /* LearnActionSheet.swift in Sources */,
 				57FFF8692351B32C00F66143 /* LearnPicker.swift in Sources */,
 				57FFF89423557DA000F66143 /* LearnDivider.swift in Sources */,
@@ -426,6 +437,7 @@
 				57FFF8672351AD0B00F66143 /* LearneEditButton.swift in Sources */,
 				573AF4A7233F33CC008767CB /* LearnText.swift in Sources */,
 				57FFF88E235578A400F66143 /* LearnScrollView.swift in Sources */,
+				57FFF8A82355BF4D00F66143 /* UIKitController.swift in Sources */,
 				57FFF89A23559D5400F66143 /* LearnAlert.swift in Sources */,
 				57FFF8882355736000F66143 /* LearnHStack.swift in Sources */,
 				57FFF8582351734200F66143 /* LearnImageSectionHeader.swift in Sources */,
