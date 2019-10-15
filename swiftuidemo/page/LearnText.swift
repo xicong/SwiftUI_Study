@@ -201,7 +201,7 @@ struct LearnText: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct LearnText_Previews: PreviewProvider {
     static var previews: some View {
         LearnText()
     }

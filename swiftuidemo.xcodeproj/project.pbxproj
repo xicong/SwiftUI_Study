@@ -31,6 +31,27 @@
 		57FFF8692351B32C00F66143 /* LearnPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8682351B32C00F66143 /* LearnPicker.swift */; };
 		57FFF86B2351BB4700F66143 /* LearnDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF86A2351BB4700F66143 /* LearnDatePicker.swift */; };
 		57FFF86D2351BCC700F66143 /* LearnToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF86C2351BCC700F66143 /* LearnToggle.swift */; };
+		57FFF87323541CF000F66143 /* LearnSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF87223541CF000F66143 /* LearnSlider.swift */; };
+		57FFF87623546D8F00F66143 /* LearnDefaultPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF87523546D8F00F66143 /* LearnDefaultPicker.swift */; };
+		57FFF87A235473E700F66143 /* LearnDefaultPickerDefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF879235473E700F66143 /* LearnDefaultPickerDefaultStyle.swift */; };
+		57FFF87C235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF87B235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift */; };
+		57FFF87E2354761100F66143 /* LearnDefaultPickerWheelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF87D2354761100F66143 /* LearnDefaultPickerWheelStyle.swift */; };
+		57FFF880235567C800F66143 /* LearnDatePickerDefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF87F235567C800F66143 /* LearnDatePickerDefaultStyle.swift */; };
+		57FFF88223556A8000F66143 /* LearnDatePickerWheelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF88123556A8000F66143 /* LearnDatePickerWheelDate.swift */; };
+		57FFF8842355701800F66143 /* LearnStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8832355701800F66143 /* LearnStepper.swift */; };
+		57FFF8862355727A00F66143 /* LearnVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8852355727A00F66143 /* LearnVStack.swift */; };
+		57FFF8882355736000F66143 /* LearnHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8872355736000F66143 /* LearnHStack.swift */; };
+		57FFF88A2355738100F66143 /* LearnZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF8892355738100F66143 /* LearnZStack.swift */; };
+		57FFF88C235575A000F66143 /* LearnList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF88B235575A000F66143 /* LearnList.swift */; };
+		57FFF88E235578A400F66143 /* LearnScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF88D235578A400F66143 /* LearnScrollView.swift */; };
+		57FFF89023557A7600F66143 /* LearnForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF88F23557A7600F66143 /* LearnForm.swift */; };
+		57FFF89223557CF400F66143 /* LearnSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89123557CF400F66143 /* LearnSpacer.swift */; };
+		57FFF89423557DA000F66143 /* LearnDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89323557DA000F66143 /* LearnDivider.swift */; };
+		57FFF89623557E9B00F66143 /* LearnNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89523557E9B00F66143 /* LearnNavigationView.swift */; };
+		57FFF89823559B4400F66143 /* LearnTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89723559B4400F66143 /* LearnTabView.swift */; };
+		57FFF89A23559D5400F66143 /* LearnAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89923559D5400F66143 /* LearnAlert.swift */; };
+		57FFF89C2355A2B700F66143 /* LearnModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89B2355A2B700F66143 /* LearnModal.swift */; };
+		57FFF89E2355A4C100F66143 /* LearnActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +102,27 @@
 		57FFF8682351B32C00F66143 /* LearnPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnPicker.swift; sourceTree = "<group>"; };
 		57FFF86A2351BB4700F66143 /* LearnDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDatePicker.swift; sourceTree = "<group>"; };
 		57FFF86C2351BCC700F66143 /* LearnToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnToggle.swift; sourceTree = "<group>"; };
+		57FFF87223541CF000F66143 /* LearnSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSlider.swift; sourceTree = "<group>"; };
+		57FFF87523546D8F00F66143 /* LearnDefaultPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDefaultPicker.swift; sourceTree = "<group>"; };
+		57FFF879235473E700F66143 /* LearnDefaultPickerDefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDefaultPickerDefaultStyle.swift; sourceTree = "<group>"; };
+		57FFF87B235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDefaultPickerSegmentedStyle.swift; sourceTree = "<group>"; };
+		57FFF87D2354761100F66143 /* LearnDefaultPickerWheelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDefaultPickerWheelStyle.swift; sourceTree = "<group>"; };
+		57FFF87F235567C800F66143 /* LearnDatePickerDefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDatePickerDefaultStyle.swift; sourceTree = "<group>"; };
+		57FFF88123556A8000F66143 /* LearnDatePickerWheelDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDatePickerWheelDate.swift; sourceTree = "<group>"; };
+		57FFF8832355701800F66143 /* LearnStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStepper.swift; sourceTree = "<group>"; };
+		57FFF8852355727A00F66143 /* LearnVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVStack.swift; sourceTree = "<group>"; };
+		57FFF8872355736000F66143 /* LearnHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnHStack.swift; sourceTree = "<group>"; };
+		57FFF8892355738100F66143 /* LearnZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnZStack.swift; sourceTree = "<group>"; };
+		57FFF88B235575A000F66143 /* LearnList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnList.swift; sourceTree = "<group>"; };
+		57FFF88D235578A400F66143 /* LearnScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScrollView.swift; sourceTree = "<group>"; };
+		57FFF88F23557A7600F66143 /* LearnForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnForm.swift; sourceTree = "<group>"; };
+		57FFF89123557CF400F66143 /* LearnSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSpacer.swift; sourceTree = "<group>"; };
+		57FFF89323557DA000F66143 /* LearnDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnDivider.swift; sourceTree = "<group>"; };
+		57FFF89523557E9B00F66143 /* LearnNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnNavigationView.swift; sourceTree = "<group>"; };
+		57FFF89723559B4400F66143 /* LearnTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTabView.swift; sourceTree = "<group>"; };
+		57FFF89923559D5400F66143 /* LearnAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAlert.swift; sourceTree = "<group>"; };
+		57FFF89B2355A2B700F66143 /* LearnModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnModal.swift; sourceTree = "<group>"; };
+		57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnActionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +162,7 @@
 		573AF4A5233F3386008767CB /* page */ = {
 			isa = PBXGroup;
 			children = (
+				57FFF874235465CF00F66143 /* picker */,
 				570A04E9234D9E1500A39ED0 /* LearnImage.swift */,
 				57FFF8572351734200F66143 /* LearnImageSectionHeader.swift */,
 				573AF4A6233F33CC008767CB /* LearnText.swift */,
@@ -129,9 +172,22 @@
 				57FFF8622351A79C00F66143 /* LearnNavigationLink.swift */,
 				57FFF8642351A89400F66143 /* LearnNavigationLinkNewPage.swift */,
 				57FFF8662351AD0B00F66143 /* LearneEditButton.swift */,
-				57FFF8682351B32C00F66143 /* LearnPicker.swift */,
-				57FFF86A2351BB4700F66143 /* LearnDatePicker.swift */,
 				57FFF86C2351BCC700F66143 /* LearnToggle.swift */,
+				57FFF87223541CF000F66143 /* LearnSlider.swift */,
+				57FFF8832355701800F66143 /* LearnStepper.swift */,
+				57FFF8852355727A00F66143 /* LearnVStack.swift */,
+				57FFF8872355736000F66143 /* LearnHStack.swift */,
+				57FFF8892355738100F66143 /* LearnZStack.swift */,
+				57FFF88B235575A000F66143 /* LearnList.swift */,
+				57FFF88D235578A400F66143 /* LearnScrollView.swift */,
+				57FFF88F23557A7600F66143 /* LearnForm.swift */,
+				57FFF89123557CF400F66143 /* LearnSpacer.swift */,
+				57FFF89323557DA000F66143 /* LearnDivider.swift */,
+				57FFF89523557E9B00F66143 /* LearnNavigationView.swift */,
+				57FFF89723559B4400F66143 /* LearnTabView.swift */,
+				57FFF89923559D5400F66143 /* LearnAlert.swift */,
+				57FFF89B2355A2B700F66143 /* LearnModal.swift */,
+				57FFF89D2355A4C100F66143 /* LearnActionSheet.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -206,6 +262,21 @@
 				57FFF85C2351825000F66143 /* KeyUtils.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		57FFF874235465CF00F66143 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				57FFF8682351B32C00F66143 /* LearnPicker.swift */,
+				57FFF86A2351BB4700F66143 /* LearnDatePicker.swift */,
+				57FFF87523546D8F00F66143 /* LearnDefaultPicker.swift */,
+				57FFF879235473E700F66143 /* LearnDefaultPickerDefaultStyle.swift */,
+				57FFF87B235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift */,
+				57FFF87D2354761100F66143 /* LearnDefaultPickerWheelStyle.swift */,
+				57FFF87F235567C800F66143 /* LearnDatePickerDefaultStyle.swift */,
+				57FFF88123556A8000F66143 /* LearnDatePickerWheelDate.swift */,
+			);
+			path = picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,21 +413,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				579D65972339C0E500D5BF2B /* AppDelegate.swift in Sources */,
+				57FFF89823559B4400F66143 /* LearnTabView.swift in Sources */,
+				57FFF880235567C800F66143 /* LearnDatePickerDefaultStyle.swift in Sources */,
+				57FFF87C235474FD00F66143 /* LearnDefaultPickerSegmentedStyle.swift in Sources */,
 				57FFF85D2351825000F66143 /* KeyUtils.swift in Sources */,
 				579D65992339C0E500D5BF2B /* SceneDelegate.swift in Sources */,
+				57FFF89E2355A4C100F66143 /* LearnActionSheet.swift in Sources */,
 				57FFF8692351B32C00F66143 /* LearnPicker.swift in Sources */,
+				57FFF89423557DA000F66143 /* LearnDivider.swift in Sources */,
 				57FFF8632351A79C00F66143 /* LearnNavigationLink.swift in Sources */,
+				57FFF88C235575A000F66143 /* LearnList.swift in Sources */,
 				57FFF8672351AD0B00F66143 /* LearneEditButton.swift in Sources */,
 				573AF4A7233F33CC008767CB /* LearnText.swift in Sources */,
+				57FFF88E235578A400F66143 /* LearnScrollView.swift in Sources */,
+				57FFF89A23559D5400F66143 /* LearnAlert.swift in Sources */,
+				57FFF8882355736000F66143 /* LearnHStack.swift in Sources */,
 				57FFF8582351734200F66143 /* LearnImageSectionHeader.swift in Sources */,
+				57FFF88223556A8000F66143 /* LearnDatePickerWheelDate.swift in Sources */,
+				57FFF89623557E9B00F66143 /* LearnNavigationView.swift in Sources */,
 				57FFF86D2351BCC700F66143 /* LearnToggle.swift in Sources */,
+				57FFF87623546D8F00F66143 /* LearnDefaultPicker.swift in Sources */,
 				57FFF8612351A51E00F66143 /* LearnButton.swift in Sources */,
 				57FFF8652351A89400F66143 /* LearnNavigationLinkNewPage.swift in Sources */,
 				579D659B2339C0E500D5BF2B /* Home.swift in Sources */,
+				57FFF8862355727A00F66143 /* LearnVStack.swift in Sources */,
+				57FFF87323541CF000F66143 /* LearnSlider.swift in Sources */,
+				57FFF87A235473E700F66143 /* LearnDefaultPickerDefaultStyle.swift in Sources */,
 				57FFF85F2351A18800F66143 /* LearntSecureField.swift in Sources */,
 				57FFF85A23517A4100F66143 /* LearntTextField.swift in Sources */,
+				57FFF88A2355738100F66143 /* LearnZStack.swift in Sources */,
+				57FFF89023557A7600F66143 /* LearnForm.swift in Sources */,
+				57FFF87E2354761100F66143 /* LearnDefaultPickerWheelStyle.swift in Sources */,
 				570A04EA234D9E1500A39ED0 /* LearnImage.swift in Sources */,
+				57FFF8842355701800F66143 /* LearnStepper.swift in Sources */,
+				57FFF89223557CF400F66143 /* LearnSpacer.swift in Sources */,
 				57FFF86B2351BB4700F66143 /* LearnDatePicker.swift in Sources */,
+				57FFF89C2355A2B700F66143 /* LearnModal.swift in Sources */,
 				57FFF85623502CC900F66143 /* HomeItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

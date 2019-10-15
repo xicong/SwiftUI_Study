@@ -13,9 +13,16 @@ struct LearnToggle: View {
     @State var isOpen = false
     
     var body: some View {
-        Toggle(isOn: $isOpen) {
-            Text("State: \(self.isOpen == true ? "开":"关")")
-        }.padding()
+        VStack{
+            
+            Toggle(isOn: $isOpen) {
+                Text("State: \(self.isOpen == true ? "开":"关")")
+            }.padding()
+            
+            Toggle("State: \(self.isOpen == true ? "开":"关")",isOn: $isOpen).padding()
+            
+        }
+        
     }
 }
 
