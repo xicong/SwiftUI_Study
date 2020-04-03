@@ -44,7 +44,7 @@ struct LearnText: View {
             VStack(alignment: .leading, spacing: 0){
                 HStack(alignment: .center, spacing: 0){
                     Text(textStr)
-//                        .bold() //字体加粗
+                        //                        .bold() //字体加粗
                         .fontWeight(textbBold ? .bold : .none)  //替代bold()的绝佳方案
                         .italic() //斜体文字
                         .baselineOffset(textBaselineOffset)
@@ -58,7 +58,7 @@ struct LearnText: View {
                 .border(Color.blue,width: 5)
                 .cornerRadius(10, antialiased: true)
                 .padding(EdgeInsets.init(top: 20, leading: 10, bottom: 20, trailing: 10))
-
+                
                 List(){
                     HStack(){
                         Text("Text(设置文字内容)").font(.system(size: 15))
@@ -156,7 +156,7 @@ struct LearnText: View {
                         if(self.textbBold){
                             self.textbBold=false
                         }else{
-                             self.textbBold=true
+                            self.textbBold=true
                         }
                     }
                     ////            .underline() //设置文字下划线，默认颜色为文字颜色
@@ -192,12 +192,23 @@ struct LearnText: View {
                 }
             }
         }
-        .navigationBarTitle("",displayMode: .inline)
+        .navigationBarTitle("Text",displayMode: .inline)
         .navigationBarItems(
             trailing:Text("恢复默认")
                 .font(.system(size: 12))
-                .bold())
-        .navigationBarHidden(false)
+                .bold()
+                .onTapGesture {
+                    self.textStr = "SwiftUI 是一种为任何 Apple 平台声明用户界面的现代化方式。以前所未有的速度，创建漂亮、动态的应用程序。"
+                    self.textColor = Color.black
+                    self.textBackGround = Color.white
+                    self.textPadding = 10.0
+                    self.textFontSize = 15.0
+                    self.textLineSpacing = 5.0
+                    self.textKerning = 0.0
+                    self.textBaselineOffset = 0.0
+                    self.textbBold = false
+            }
+        ).navigationBarHidden(false)
     }
 }
 

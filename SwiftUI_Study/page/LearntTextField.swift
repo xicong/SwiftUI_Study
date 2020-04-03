@@ -26,7 +26,7 @@ struct LearntTextField: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             }.padding()
             Spacer()
-        }.navigationBarTitle("",displayMode: .inline)
+        }.navigationBarTitle("TextField",displayMode: .inline)
     }
 }
 

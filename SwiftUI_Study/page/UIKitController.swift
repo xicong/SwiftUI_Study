@@ -29,8 +29,7 @@ class UIKitController: UIViewController {
     }()
     
     @objc func openContentView() {
-        
-        let hostVC = UIHostingController(rootView: Home())
+        let hostVC = UIHostingController(rootView: Main())
         present(hostVC, animated: true, completion: nil)
     }
     

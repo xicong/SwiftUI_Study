@@ -26,6 +26,7 @@ struct LearnPicker: View {
         
     }
 }
+
 struct Learnp_Previews: PreviewProvider {
     static var previews: some View {
         LearnPicker()

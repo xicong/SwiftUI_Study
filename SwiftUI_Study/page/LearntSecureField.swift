@@ -26,7 +26,7 @@ struct LearntSecureField: View {
             Spacer()
         }
         .padding()
-        .navigationBarTitle("",displayMode: .inline)
+        .navigationBarTitle("SecureField",displayMode: .inline)
     }
 }
 
